@@ -1,4 +1,4 @@
-// math algorithm //
+// math algorithm 1 //
 
 function fibonacci(n) {
   const array = [0, 1];
