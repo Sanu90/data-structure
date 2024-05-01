@@ -1,3 +1,5 @@
+// math algorithm //
+
 function fibonacci(n) {
   const array = [0, 1];
   for (let i = 2; i < n; i++) {
@@ -8,3 +10,5 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(5));
+
+// time complexity (worst case) is: O(n)
