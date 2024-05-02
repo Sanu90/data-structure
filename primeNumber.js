@@ -10,6 +10,6 @@ function primeNumber(n) {
   return true;
 }
 
-console.log(primeNumber(101));
+console.log(primeNumber(207));
 
 // time complexity (worst case) is: O(n)
