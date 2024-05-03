@@ -1,8 +1,16 @@
 // find the nth element of the fibonacci sequence //
 
-function recursiveFibonacci(n){
-    if(n<2) return n
-     return recursiveFibonacci(n-1) + recursiveFibonacci(n-2)
+function fibonacciUsingRecursion(n){
+if(n<2) return n;
+
+return fibonacciUsingRecursion(n-1)+fibonacciUsingRecursion(n-2);
 }
 
-console.log(recursiveFibonacci(10))
+console.log(fibonacciUsingRecursion(10));
+
+
+
+// time complexity (worst case) is: O(2^n)
+
+
+
