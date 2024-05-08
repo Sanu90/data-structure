@@ -9,7 +9,6 @@ return fibonacciUsingRecursion(n-1)+fibonacciUsingRecursion(n-2);
 console.log(fibonacciUsingRecursion(10));
 
 
-
 // time complexity (worst case) is: O(2^n)
 
 
