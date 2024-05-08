@@ -21,3 +21,5 @@ function binarySearch(array, value) {
 console.log(binarySearch(array, 100));
 console.log(binarySearch(array, 10));
 console.log(binarySearch(array, 29));
+
+// worst case (big O) is: O(log n)
