@@ -12,15 +12,15 @@ class linkedList {
     this.head = null;
     this.size = 0;
   }
+
   isEmpty() {
     return this.size == 0;
   }
-
-  getSize() {
+  isSize() {
     return this.size;
   }
 }
 
 const list = new linkedList();
-console.log(list.isEmpty());
-console.log(list.getSize());
+console.log("Array empty?", list.isEmpty());
+console.log("Array size: ", list.isSize());
