@@ -10,10 +10,10 @@ class LinkedList {
     this.head = null;
     this.size = 0;
   }
+
   isEmpty() {
     return this.size == 0;
   }
-
   getSize() {
     return this.size;
   }
@@ -43,27 +43,6 @@ class LinkedList {
     this.size++;
   }
 
-  insert(value, index) {
-    if (index < 0 || index > this.size) {
-      console.log(
-        "Please check the list size and the index which you tried to add."
-      );
-      return;
-    }
-    if (index === 0) {
-      this.prepend(value);
-    } else {
-      const node = new Node(value);
-      let prev = this.head;
-      for (let i = 0; i < index - 1; i++) {
-        prev = prev.next;
-      }
-      node.next = prev.next;
-      prev.next = node;
-      this.size++;
-    }
-  }
-
   display() {
     if (this.isEmpty()) {
       console.log("List is empty");
@@ -80,11 +59,11 @@ class LinkedList {
 }
 
 const list = new LinkedList();
-console.log(list.isEmpty());
-list.prepend(10);
-list.prepend(20);
-list.display();
-list.append(99);
-list.display();
+//console.log(list.isEmpty());
 console.log(list.getSize());
-list.insert(9, 100);
+list.prepend(5);
+list.prepend(50);
+list.prepend(16);
+list.append(25);
+console.log(list.getSize());
+list.display();
