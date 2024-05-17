@@ -1,26 +1,13 @@
-let array = [1, 2, 3, 4, 5, 6, 7];
+// binary search using recursion//
 
-function binarySearchRecursion(arr, value) {
-  return search(arr, value, 0, arr.length - 1);
+function binaryRecursion(array, value) {
+  return search(array, value, 0, array.length - 1);
 }
 
-function search(arr, value, left, right) {
-  if (left > right) {
-    return -1;
-  }
-
-  let middle = Math.floor((left + right) / 2);
-  if (value == arr[middle]) {
-    return middle;
-  }
-  if (value < arr[middle]) {
-    return search(arr, value, left, middle - 1);
-  } else {
-    return search(arr, value, middle + 1, right);
-  }
+function search(array, value, left, right) {
+  let mid = Math.floor((left + right) / 2);
 }
 
-console.log(binarySearchRecursion(array,1));
 //-----------------------------------------------------------------
 // normal binary search//
 // let array = [1, 2, 3, 4, 5];
