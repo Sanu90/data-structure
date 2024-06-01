@@ -60,35 +60,6 @@ class LinkedList {
       node.next = prev.next;
       prev.next = node;
     }
-    this.size++;
-  }
-
-  remove(index) {
-    let removeNode;
-    if (index < 0 || index > this.size) {
-      console.log("Error happened while removing. PLease check once again");
-      return;
-    }
-    if (index == 0) {
-      removeNode = this.head;
-      this.head = removeNode.next;
-      //this.head = this.head.next;
-    } else {
-      let prev = this.head;
-      for (let i = 0; i < index - 1; i++) {
-        prev = prev.next;
-      }
-      removeNode = prev.next;
-      prev.next = removeNode.next;
-    }
-    this.size--;
-  }
-
-  removeValue(value) {
-    if (this.isEmpty()) {
-      console.log("List is empty.");
-      return;
-    }
   }
 
   display() {
@@ -120,6 +91,4 @@ list.display();
 list.insert(0, 100);
 list.display();
 list.insert(3, 101);
-list.display();
-list.remove(1);
 list.display();
